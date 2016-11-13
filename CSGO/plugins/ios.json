@@ -1,0 +1,76 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "Savut"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "Savut"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "Savut"
+        }
+    }
+}
