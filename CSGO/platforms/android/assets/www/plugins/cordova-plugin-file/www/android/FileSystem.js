@@ -37,7 +37,7 @@ module.exports = {
             if (!/^\//.test(path)) {
                 path = '/' + path;
             }
-
+            
             var m = /\?.*/.exec(nativeUrl);
             if (m) {
                 path += m[0];

@@ -146,7 +146,7 @@ FileWriter.prototype.write = function(data, isPendingBlobReadResult) {
         // create a plain array, using the keys from the Uint8Array view so that we can serialize it
         data = Array.apply(null, new Uint8Array(data));
     }
-
+    
     // Throw an exception if we are already writing a file
     if (this.readyState === FileWriter.WRITING && !isPendingBlobReadResult) {
         throw new FileError(FileError.INVALID_STATE_ERR);

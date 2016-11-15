@@ -54,7 +54,7 @@ module.exports = {
     vibrate: function(param) {
 
         /* Aligning with w3c spec */
-
+        
         //vibrate
         if ((typeof param == 'number') && param !== 0)
             exec(null, null, "Vibration", "vibrate", [param]);

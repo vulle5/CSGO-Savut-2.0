@@ -113,6 +113,14 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
+.ui-header {
+    height: 43px;
+}
+
+.ui-footer {
+    height: 43px;
+}
+
 img {
     max-width: 100%;
     height: auto;
