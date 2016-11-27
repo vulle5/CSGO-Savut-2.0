@@ -26,6 +26,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://code.jquery.com data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *">
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
@@ -41,6 +42,7 @@
     integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4="
     crossorigin="anonymous"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>CSGO Smokes</title>
@@ -81,7 +83,7 @@
 
     <div data-role="main" class="ui-content">
 
-        <img id="#maps" src="/img/dust2/dust2_map.jpg" alt="No Picture" style=" width:400px; height:400px;"
+        <img id="#maps" src="img/dust2/dust2_map.jpg" alt="No Picture" style="width:400px; height:400px;"
              usemap="#dust2map">
 
         <map name="dust2map">
@@ -96,7 +98,13 @@
     <div data-role="footer">
         <h4>Mobiiliohjelmointi</h4>
     </div> <!-- /footer -->
-
+    
+    <script type="text/javascript">
+            
+        $('map').imageMapResize();     
+    
+    </script>
+    
 </div> <!-- DUST II -->    
 
 <div data-role="page" id="ct_a">
@@ -108,7 +116,9 @@
     </div> <!-- /header -->
 
     <div role="main" class="ui-content ui-body-a">
-        
+        <img id="#dust_2" src="img/dust2/20161127145105_1.jpg" alt="No Picture" style="width:300px; height:225px;">
+        <img id="#dust_2" src="img/dust2/20161127145115_1.jpg" alt="No Picture" style="width:300px; height:225px;"> 
+        <img id="#dust_2" src="img/dust2/20161127145120_1.jpg" alt="No Picture" style="width:300px; height:225px;"> 
     </div> <!-- /content -->
 
     <div data-role="footer">
@@ -282,14 +292,14 @@
 
 
 <script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="/js/index.js"></script>
-<script type="text/javascript" src="/js/custom.js"></script>
-<script type="text/javascript" src="/js/imageMapResizer.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!--<script type="text/javascript" src="js/imageMapResizer.min.js"></script>
 <script type="text/javascript">
-       
-        $('map').imageMapResize();
+            
+        $('map').imageMapResize();     
     
-</script>
+</script>-->
 
 </body>
 
