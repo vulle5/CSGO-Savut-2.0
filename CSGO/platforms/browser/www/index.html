@@ -35,7 +35,7 @@
         * Enable eval(): add 'unsafe-eval' to default-src
     * Create your own at http://cspisawesome.com
     -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src * http://api.steampowered.com/" />-->
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
     <script src="js/jquery-2.1.4.js"
     integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4="
@@ -56,7 +56,7 @@
     </div> <!-- /header -->
 
     <div role="main" class="ui-content ui-body-a">
-        <a href="#de_dust_2" data-transition="slide" class="ui-btn ui-corner-all">Dust II</a>
+        <a href="#de_dust2" data-transition="slide" class="ui-btn ui-corner-all">Dust II</a>
         <a href="#de_mirage" data-transition="slide" class="ui-btn ui-corner-all">Mirage</a>
         <a href="#de_cache" data-transition="slide" class="ui-btn ui-corner-all">Cache</a>
         <a href="#de_cbbl" data-transition="slide" class="ui-btn ui-corner-all">Cobblestone</a>
@@ -71,8 +71,7 @@
 
 </div> <!-- /page -->
 
-
-<div data-role="page" id="de_dust_2">
+<div data-role="page" id="de_dust2">
 
     <div data-role="header">
         <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
@@ -82,21 +81,97 @@
 
     <div data-role="main" class="ui-content">
 
-        <img id="#maps" src="/img/dust2_map.jpg" alt="No Picture" style=" width:800px; height:800px;"
+        <img id="#maps" src="/img/dust2/dust2_map.jpg" alt="No Picture" style=" width:400px; height:400px;"
              usemap="#dust2map">
 
         <map name="dust2map">
-            <area alt="Troll" href="html/example.html" shape="rect" coords="384,215,400,230"/>
+            <area alt="" title="ct_a" href="#ct_a" shape="rect" coords="190,103,209,121" />
+            <area alt="" title="ct_b" href="#ct_b" shape="rect" coords="259,97,280,115" />
+            <area alt="" title="long_doors" href="#long_doors" shape="rect" coords="262,214,283,231" />
+            <area alt="" title="b_tunnel" href="#b_tunnel" shape="rect" coords="37,124,60,142" />
         </map>
-
+        
     </div>
 
     <div data-role="footer">
         <h4>Mobiiliohjelmointi</h4>
     </div> <!-- /footer -->
 
-</div> <!-- DUST II -->
+</div> <!-- DUST II -->    
 
+<div data-role="page" id="ct_a">
+
+    <div data-role="header">
+        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
+        <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <h1>CSGO Smokes</h1>
+    </div> <!-- /header -->
+
+    <div role="main" class="ui-content ui-body-a">
+        
+    </div> <!-- /content -->
+
+    <div data-role="footer">
+        <h4>Mobiiliohjelmointi</h4>
+    </div> <!-- /footer -->
+        
+    </div> <!-- /page -->
+    
+<div data-role="page" id="ct_b">
+
+    <div data-role="header">
+        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
+        <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <h1>CSGO Smokes</h1>
+    </div> <!-- /header -->
+
+    <div role="main" class="ui-content ui-body-a">
+        
+    </div> <!-- /content -->
+
+    <div data-role="footer">
+        <h4>Mobiiliohjelmointi</h4>
+    </div> <!-- /footer -->
+
+</div> <!-- /page -->
+    
+<div data-role="page" id="long_doors">
+
+    <div data-role="header">
+        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
+        <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <h1>CSGO Smokes</h1>
+    </div> <!-- /header -->
+
+    <div role="main" class="ui-content ui-body-a">
+        
+    </div> <!-- /content -->
+
+    <div data-role="footer">
+        <h4>Mobiiliohjelmointi</h4>
+    </div> <!-- /footer -->
+
+</div> <!-- /page -->
+    
+<div data-role="page" id="b_tunnel">
+
+    <div data-role="header">
+        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
+        <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <h1>CSGO Smokes</h1>
+    </div> <!-- /header -->
+
+    <div role="main" class="ui-content ui-body-a">
+        
+    </div> <!-- /content -->
+
+    <div data-role="footer">
+        <h4>Mobiiliohjelmointi</h4>
+    </div> <!-- /footer -->
+
+</div> <!-- /page -->
+        
+    
 <div data-role="page" id="de_mirage">
 
     <div data-role="header">
@@ -209,13 +284,13 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="/js/index.js"></script>
 <script type="text/javascript" src="/js/custom.js"></script>
-<script type="text/javascript" src="/js/imageMapResizer.js"></script>
-<script type="text/javascript"></script>
+<script type="text/javascript" src="/js/imageMapResizer.min.js"></script>
 <script type="text/javascript">
-
-    $('map').imageMapResize();
-
+       
+        $('map').imageMapResize();
+    
 </script>
+
 </body>
 
 </html>

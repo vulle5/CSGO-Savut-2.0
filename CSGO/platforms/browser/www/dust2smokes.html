@@ -36,18 +36,47 @@
     * Create your own at http://cspisawesome.com
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-    <link rel="stylesheet" type="text/css" href="/css/jquery.mobile-1.4.5.min.css" />
-    <script src="/js/jquery-2.1.4.js"
+    <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.5.min.css" />
+    <script src="../js/jquery-2.1.4.js"
     integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4="
     crossorigin="anonymous"></script>
-    <script src="/js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
     <title>CSGO Smokes</title>
 </head>
 
 <body>
+    
     <div data-role="page" id="main">
+
+    <div data-role="header">
+        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
+        <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <h1>Dust II</h1>
+    </div> <!-- /header -->
+
+    <div data-role="main" class="ui-content">
+
+        <img id="#maps" src="/img/dust2/dust2_map.jpg" alt="No Picture" style=" width:400px; height:400px;"
+             usemap="#dust2map">
+
+        <map name="dust2map">
+            <area alt="" title="ct_a" href="index.html" shape="rect" coords="190,103,209,121" />
+            <area alt="" title="ct_b" href="index.html" shape="rect" coords="259,97,280,115" />
+            <area alt="" title="long_door" href="index.html" shape="rect" coords="262,214,283,231" />
+            <area alt="" title="b_tunnel" href="index.html" shape="rect" coords="37,124,60,142" />
+        </map>
+        
+    </div>
+
+    <div data-role="footer">
+        <h4>Mobiiliohjelmointi</h4>
+    </div> <!-- /footer -->
+
+    </div> <!-- DUST II -->
+    
+    <div data-role="page" id="ct_b">
 
     <div data-role="header">
         <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
@@ -55,13 +84,58 @@
     </div> <!-- /header -->
 
     <div role="main" class="ui-content ui-body-a">
-        <a href="#de_dust_2" data-transition="slide" class="ui-btn ui-corner-all">Dust II</a>
-        <a href="#de_mirage" data-transition="slide" class="ui-btn ui-corner-all">Mirage</a>
-        <a href="#de_cache" data-transition="slide" class="ui-btn ui-corner-all">Cache</a>
-        <a href="#de_cbbl" data-transition="slide" class="ui-btn ui-corner-all">Cobblestone</a>
-        <a href="#de_overpass" data-transition="slide" class="ui-btn ui-corner-all">Overpass</a>
-        <a href="#de_train" data-transition="slide" class="ui-btn ui-corner-all">Train</a>
-        <a href="#de_nuke" data-transition="slide" class="ui-btn ui-corner-all">Nuke</a>
+        
+    </div> <!-- /content -->
+
+    <div data-role="footer">
+        <h4>Mobiiliohjelmointi</h4>
+    </div> <!-- /footer -->
+        
+    </div> <!-- /page -->
+    
+    <div data-role="page" id="ct_a">
+
+    <div data-role="header">
+        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
+        <h1>CSGO Smokes</h1>
+    </div> <!-- /header -->
+
+    <div role="main" class="ui-content ui-body-a">
+        
+    </div> <!-- /content -->
+
+    <div data-role="footer">
+        <h4>Mobiiliohjelmointi</h4>
+    </div> <!-- /footer -->
+
+    </div> <!-- /page -->
+    
+    <div data-role="page" id="long_doors">
+
+    <div data-role="header">
+        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
+        <h1>CSGO Smokes</h1>
+    </div> <!-- /header -->
+
+    <div role="main" class="ui-content ui-body-a">
+        
+    </div> <!-- /content -->
+
+    <div data-role="footer">
+        <h4>Mobiiliohjelmointi</h4>
+    </div> <!-- /footer -->
+
+    </div> <!-- /page -->
+    
+    <div data-role="page" id="b_tunnel">
+
+    <div data-role="header">
+        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
+        <h1>CSGO Smokes</h1>
+    </div> <!-- /header -->
+
+    <div role="main" class="ui-content ui-body-a">
+        
     </div> <!-- /content -->
 
     <div data-role="footer">
@@ -73,12 +147,8 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
     <script type="text/javascript" src="/js/custom.js"></script>
-    <script type="text/javascript" src="/js/imageMapResizer.min.js"></script>
-    <script type="text/javascript">
+    
 
-        $('map').imageMapResize();
-
-    </script>
 </body>   
 
 </html>    
