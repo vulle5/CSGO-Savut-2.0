@@ -3,3 +3,6 @@
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
+/CSGO/.idea/CSGO.iml
+/CSGO/.idea/modules.xml
+/CSGO/.idea/workspace.xml
