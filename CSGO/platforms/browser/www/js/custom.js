@@ -25,24 +25,42 @@ $(document).on("pagecreate", function () {
 var user_id = "";
 var url = "";
 $("#url-1").on("keyup change", function() {
-   user_id = this.value; // omit "var" to make it global
-   //$("#dom_element").text(user_id);
+    user_id = this.value;
     console.log(user_id);
 });
 
+//AJAX call
 $("button").click(function() {
+
+if (user_id.length < 1){
+        alert("User id is empty");
+        return;
+} else {
     url = "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=18C381D0049CCF7EFF870B99AA8B8C17&steamid=" + user_id;
     console.log(url);
     
-   // var $csgoStats = $('#csgoStats');
+    var $csgoStats = $('#csgoStats');
+    var jsonarray = [];
     
     $.ajax({
         type: 'GET',
         url: url,
         dataType: 'json',
-        success: function(data) {
-            console.log('success', data);
-            console.log(data.playerstats.steamID);
+        success: function(stats) {
+            console.log('success', stats);
+            for (i = 0; i < 10; i++){ 
+            jsonarray.push(JSON.stringify(stats.playerstats.stats[i].value));    
+            }
+            console.log(jsonarray);
+       /*  $.each(jsonarray, function(i, stat){
+                $csgoStats.append('<li>name: ' + stat.name + ', value: ' + stat.value + '</li>');            
+            console.log(stats.playerstats.stats[0].name);    
+           });*/
+           //console.log(data.playerstats.stats[i].value);
+           // console.log(data.playerstats.stats[0].value);
         }   
     });
+    //JSON.parse(jsonarray);
+    //console.log(jsonarray);
+    }
 });
