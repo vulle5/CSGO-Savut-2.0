@@ -36,7 +36,7 @@
         * Enable eval(): add 'unsafe-eval' to default-src
     * Create your own at http://cspisawesome.com
     -->
-    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src * http://api.steampowered.com/" />-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src * http://api.steampowered.com/" />
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
     <script src="js/jquery-2.1.4.js"
     integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4="
@@ -51,7 +51,7 @@
 <body>
 
 <div data-role="page" id="main">
-
+    
     <div data-role="header">
         <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <h1>CSGO Smokes</h1>
@@ -290,6 +290,28 @@
 
 </div> <!-- NUKE -->
 
+<div data-role="page" id="stats">
+
+    <div data-role="header">
+        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
+        <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <h1>My Stats</h1>
+    </div> <!-- /header -->
+
+    <div data-role="main" class="ui-content">
+        <form>
+            <label for="url-1">Write your steam profile id here</label>
+            <input type="url" data-clear-btn="true" name="url-1" id="url-1" value="">
+        </form>
+        <button id="statsSend" class="ui-btn ui-inline-button">Send</button>
+        <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+    </div>
+
+    <div data-role="footer">
+        <h4>Mobiiliohjelmointi</h4>
+    </div> <!-- /footer -->
+
+</div> <!-- MY STATS -->
 
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
