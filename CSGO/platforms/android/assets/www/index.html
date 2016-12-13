@@ -42,7 +42,6 @@
     integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4="
     crossorigin="anonymous"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>CSGO Smokes</title>
@@ -76,61 +75,56 @@
 <div data-role="page" id="de_dust2">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>Dust II</h1>
     </div> <!-- /header -->
 
     <div data-role="main" class="ui-content">
-
-        <img id="#maps" src="img/dust2/dust2_map.jpg" alt="No Picture" style="width:400px; height:400px;"
-             usemap="#dust2map">
-
-        <map name="dust2map">
-            <area alt="" title="ct_a" href="#ct_a" shape="rect" coords="190,103,209,121" />
-            <area alt="" title="ct_b" href="#ct_b" shape="rect" coords="259,97,280,115" />
-            <area alt="" title="long_doors" href="#long_doors" shape="rect" coords="262,214,283,231" />
-            <area alt="" title="b_tunnel" href="#b_tunnel" shape="rect" coords="37,124,60,142" />
-        </map>
-        
+        <div class="parent">    
+            <img id="#maps" class="image1" src="img/dust2/dust2_map.png" alt="No Picture" style="width:400px; height:400px;"/>
+            <a href="#ct_a">
+            <img class="image2" src="img/smoket.png" title="ct_a"/>
+            </a>
+            <a href="#ct_b">
+            <img class="image3" src="img/smoket.png" title="ct_b"/>
+            </a>
+            <a href="#long_doors">
+            <img class="image4" src="img/smokect.png" title="long doors"/>
+            </a>
+            <a href="#b_tunnel">
+            <img class="image5" src="img/smoket.png" title="b tunnel"/>
+            </a>
+            <a href="#xbox_smoke">
+            <img class="image6" src="img/smoket.png" title="xbox"/>
+        </div>    
     </div>
 
     <div data-role="footer">
         <h4>Mobiiliohjelmointi</h4>
     </div> <!-- /footer -->
     
-    <script type="text/javascript">
-            
-        $('map').imageMapResize();     
-    
-    </script>
-    
 </div> <!-- DUST II -->    
-
+        
 <div data-role="page" id="ct_a">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>CSGO Smokes</h1>
     </div> <!-- /header -->
 
     <div role="main" class="ui-content ui-body-a">
-        <img id="#dust_2" src="img/dust2/20161127145105_1.jpg" alt="No Picture" style="width:300px; height:225px;">
-        <img id="#dust_2" src="img/dust2/20161127145115_1.jpg" alt="No Picture" style="width:300px; height:225px;"> 
-        <img id="#dust_2" src="img/dust2/20161127145120_1.jpg" alt="No Picture" style="width:300px; height:225px;"> 
+        
     </div> <!-- /content -->
 
     <div data-role="footer">
         <h4>Mobiiliohjelmointi</h4>
     </div> <!-- /footer -->
-        
-    </div> <!-- /page -->
-    
+
+</div> <!-- /page -->
+             
 <div data-role="page" id="ct_b">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>CSGO Smokes</h1>
     </div> <!-- /header -->
@@ -148,7 +142,6 @@
 <div data-role="page" id="long_doors">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>CSGO Smokes</h1>
     </div> <!-- /header -->
@@ -166,7 +159,6 @@
 <div data-role="page" id="b_tunnel">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>CSGO Smokes</h1>
     </div> <!-- /header -->
@@ -180,12 +172,30 @@
     </div> <!-- /footer -->
 
 </div> <!-- /page -->
+    
+<div data-role="page" id="xbox_smoke">
+
+    <div data-role="header">
+        <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <h1>CSGO Smokes</h1>
+    </div> <!-- /header -->
+
+    <div role="main" class="ui-content ui-body-a">
+        <img id="#dust_2" src="img/dust2/20161127145105_1.jpg" alt="No Picture" style="width:300px; height:225px;">
+        <img id="#dust_2" src="img/dust2/20161127145115_1.jpg" alt="No Picture" style="width:300px; height:225px;"> 
+        <img id="#dust_2" src="img/dust2/20161127145120_1.jpg" alt="No Picture" style="width:300px; height:225px;"> 
+    </div> <!-- /content -->
+
+    <div data-role="footer">
+        <h4>Mobiiliohjelmointi</h4>
+    </div> <!-- /footer -->
+
+</div> <!-- /page -->
         
     
 <div data-role="page" id="de_mirage">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>Otsikko</h1>
     </div> <!-- /header -->
@@ -203,7 +213,6 @@
 <div data-role="page" id="de_cache">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>Otsikko</h1>
     </div> <!-- /header -->
@@ -221,7 +230,6 @@
 <div data-role="page" id="de_cbbl">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>Otsikko</h1>
     </div> <!-- /header -->
@@ -239,7 +247,6 @@
 <div data-role="page" id="de_overpass">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>Otsikko</h1>
     </div> <!-- /header -->
@@ -257,7 +264,6 @@
 <div data-role="page" id="de_train">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>Otsikko</h1>
     </div> <!-- /header -->
@@ -275,7 +281,6 @@
 <div data-role="page" id="de_nuke">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>Otsikko</h1>
     </div> <!-- /header -->
@@ -293,18 +298,18 @@
 <div data-role="page" id="stats">
 
     <div data-role="header">
-        <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
         <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1>My Stats</h1>
     </div> <!-- /header -->
 
-    <div data-role="main" class="ui-content">
+    <div data-role="main" id=statsMain class="ui-content">
         <form>
             <label for="url-1">Write your steam profile id here</label>
             <input type="text" data-clear-btn="true" name="url-1" id="url-1" value="">
         </form>
         <button id="statsSend" class="ui-btn ui-inline-button">Send</button>
-        <ul id= "csgoStats"></ul>
+        
+        <ul id="myStats"></ul>
     </div>
 
     <div data-role="footer">
@@ -316,12 +321,6 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
-<!--<script type="text/javascript" src="js/imageMapResizer.min.js"></script>
-<script type="text/javascript">
-            
-        $('map').imageMapResize();     
-    
-</script>-->
 
 </body>
 

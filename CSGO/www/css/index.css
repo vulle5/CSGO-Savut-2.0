@@ -120,8 +120,53 @@ h1 {
 .ui-footer {
     height: 43px;
 }
+#myStats li {
+    list-style-type: none;
+}
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  top: 103px;
+  left: 190px;
+}
+
+.image3 {
+  position: absolute;
+  top: 97px;
+  left: 259px;
+}
+
+.image4 {
+  position: absolute;
+  top: 214px;
+  left: 262px;
+}
+
+.image5 {
+  position: absolute;
+  top: 124px;
+  left: 37px;
+}
+
+.image6 {
+  position: absolute;
+  top: 166px;
+  left: 184px;
 }
